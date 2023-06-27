@@ -1,0 +1,111 @@
+/* CUSTOM PROPERTY */
+
+:root {
+  /* Colors */
+  --flourescent-blue: hsl(178, 100%, 49%);
+  --heliotrope-gray: hsl(253, 15%, 70%);
+  --dark-violet: hsl(252, 100%, 12%);
+  --space-cadet: hsl(247, 43%, 20%);
+  --blue-ryb: hsl(221, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+
+  --gradient: linear-gradient(
+    to right,
+    var(--flourescent-blue),
+    var(--blue-ryb)
+  );
+
+  /* Typography */
+
+  --ff-josefin: "Josefin sans", sans-serif;
+
+  /* Font-size */
+
+  --fs-1: 25px;
+  --fs-2: 18px;
+  --fs-3: 17px;
+  --fs-4: 15px;
+
+  /* Font-Weight */
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* Transition */
+  --transition: 0.25s ease-in-out;
+
+  /* Spacing */
+  --section-padding: 30px;
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+  border: none;
+  width: 100%;
+}
+
+:focus {
+  outline-offset: 4px;
+}
+
+html {
+  font-family: var(--ff-josefin);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--dark-violet);
+  color: var(--white);
+}
+
+::webkit-scrolbar {
+  width: 10px;
+}
+
+::webkit-scrolbar-track {
+  background: var(--dark-violet);
+  border-left: 1px solid var(--space-cadet);
+}
+
+::webkit-scrolbar-thumb {
+  background: hsla(0, 0%, 100%, 0.8);
+}
+
+::webkit-scrolbar-thumb:hover {
+  background: hsla(0, 0%, 100%, 0.6);
+}
+
+/* RESUSED STYLE */
